@@ -7,12 +7,10 @@ import Nav from '../Components/Nav/Nav';
 
 const App = () => {
   return (
-    <div className="App">
+      <>
+      <WelcomeView />
       <Nav />
-      <Routes>
-        <Route path="/" element={<WelcomeView />} />
-      </Routes>
-    </div>
+      </>
   )
 }
 
