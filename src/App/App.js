@@ -1,17 +1,16 @@
 import './App.scss';
 import React from 'react';
 import { Routes, Route} from "react-router-dom";
-import RouterTest from '../Components/RouterTest';
-import RouterTest2 from '../Components/RouterTest2';
+import WelcomeView from '../Components/WelcomeView/WelcomeView';
+import Nav from '../Components/Nav/Nav';
 
 
 const App = () => {
   return (
     <div className="App">
-      <h1> Oscar Cortez Barrientos</h1>
+      <Nav />
       <Routes>
-        <Route path="/" element={<RouterTest />} />
-        <Route path="test" element={<RouterTest2 />} />
+        <Route path="/" element={<WelcomeView />} />
       </Routes>
     </div>
   )
