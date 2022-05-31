@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-    <div>
+    <div id="aboutMe">
       <p>About Me</p>
     </div>
   )

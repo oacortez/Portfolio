@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const WelcomeView = () => {
   return (
-    <section id="aboutMe" className="landing-page-container">
+    <section id="home" className="landing-page-container">
       {/* <Nav /> */}
       <h1 className="name"> Oscar Cortez Barrientos </h1>
       {/* <nav> */}
