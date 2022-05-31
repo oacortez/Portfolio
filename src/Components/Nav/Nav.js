@@ -1,19 +1,26 @@
 import React from 'react';
 import '../Nav/Nav.scss';
+import MenuItems from '../Nav/MenuItems';
 
 const Nav = () => {
+
   return (
-    <div>
-      <h2>NavBar Component</h2>
-      <>
-      <nav>
-      <a href="#home" className="projects-btn">Oscar C</a>
-      <a href="#aboutMe" className="projects-btn">About Me</a>
-      <a href="#projects" className="projects-btn">Projects</a>
-      <a href="#contact" className="projects-btn">Contact Me</a>
-      </nav>
-    </>
-    </div>
+    <nav className="navBarItems">
+      <h1 className="navBar-logo">Navbar Logo</h1>
+      <div className="menu-icon">
+
+      </div>
+
+      <ul>
+        {MenuItems.map((item, index) => {
+          return (
+            <li key={index}>
+              <a className={item.cName} href={item.url}>{item.title}</a>
+            </li>
+          )
+        })}
+      </ul>
+    </nav>
   )
 }
 
