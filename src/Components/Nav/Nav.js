@@ -2,13 +2,13 @@ import React from 'react';
 import '../Nav/Nav.scss';
 import MenuItems from '../Nav/MenuItems';
 
+
 const Nav = () => {
 
   return (
     <nav className="navBarItems">
-      <h1 className="navBar-logo">Navbar Logo</h1>
+      <h1 className="navBar-logo">Navbar Logo <i class="fa-solid fa-code"></i> </h1>
       <div className="menu-icon">
-
       </div>
 
       <ul>
