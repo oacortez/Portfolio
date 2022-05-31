@@ -1,5 +1,5 @@
 .landing-page-container {
-  background-image: url(../Images/dominik-schroder-FIKD9t5_5zQ-unsplash.png);
+  background-image: url(../../Images/dominik-schroder-FIKD9t5_5zQ-unsplash.png);
   height: 100vh;
   width: auto;
   z-index: 2;
@@ -8,4 +8,12 @@
   background-position: center;
   pointer-events: none;
   // position: absolute;
+}
+
+.name {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
