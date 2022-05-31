@@ -4,19 +4,20 @@ import { Routes, Route} from "react-router-dom";
 import WelcomeView from '../Components/WelcomeView/WelcomeView';
 import Nav from '../Components/Nav/Nav';
 import AboutMe from '../Components/AboutMe/AboutMe';
+import ProjectsView from '../Components/Projects/ProjectsView';
+import Contact from '../Components/Info/Contact';
 
 
 const App = () => {
 
   return (
-    <div>
+    <main>
       <Nav />
-      <Routes>
-        <Route path="/" element={<WelcomeView />} />
-        {/* <Nav /> */}
-        <Route path="/aboutMe" element={<AboutMe />} />
-      </Routes>
-    </div>
+      <WelcomeView />
+      <AboutMe />
+      <ProjectsView />
+      <Contact />
+    </main>
   )
 }
 
